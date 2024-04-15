@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/radioButton.css">
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p class="title">Способ доставки</p>
+
+    <form class="agreeWithConditionsForm form" action="#" method="post" enctype="multipart/form-data">
+
+      <div class="radioInput">
+        <input id="bankDelivery" name="delivery" value="bankDelivery" type="radio" class="custom-radio">
+        <label for="bankDelivery">Доставка карточки в подразделение банка</label>
+      </div>
+
+      <div class="radioInput">
+        <input id="postDelivery" name="delivery" value="postDelivery" type="radio" class="custom-radio">
+        <label for="postDelivery">Почтовая доставка карточки</label>
+      </div>
+
+      <div class="agreeWithConditionsForm__buttonBlock buttonBlock">
+        <button type="submit" nextPage="../detailedApplication/detailedApplication.html"
+          id="agreeWithConditionsFormButton"
+          class="button submitButton agreeWithConditionsForm__button_next">Продолжить</button>
+        <a href="../detailedApplication/detailedApplication.html" class="button backButton">Назад</a>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script src="./agreeWithConditions.js"></script>
+</body>
+
+</html>

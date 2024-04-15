@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/radioButton.css">
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p class="title">Доставка карточки в подразделение банка</p>
+
+    <form class="bankDeliveryForm form"  method="post" enctype="multipart/form-data">
+
+      <!-- <div class="radioInput">
+        <input id="bankDelivery" name="delivery" value="bankDelivery" type="radio" class="custom-radio">
+        <label for="bankDelivery">Доставка карточки в подразделение банка</label>
+      </div>
+
+      <div class="radioInput">
+        <input id="postDelivery" name="delivery" value="postDelivery" type="radio" class="custom-radio">
+        <label for="postDelivery">Почтовая доставка карточки</label>
+      </div> -->
+
+      <div class="bankDeliveryForm__buttonBlock buttonBlock">
+        <button type="submit" nextPage="../introduction/introduction.html"
+          id="bankDeliveryFormButton"
+          class="button submitButton bankDeliveryForm__button_next">Продолжить</button>
+        <a href="../agreeWithConditions/agreeWithConditions.html" class="button backButton">Назад</a>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script src="./bankDelivery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">Подтверждение заключения договора</h1>
+
+    <form novalidate id="form" class="confirmConcludeContractForm" action="#" method="post" enctype="multipart/form-data">
+
+      <div class="confirmConcludeContractForm__inputBlock inputBlock">
+        <p class="concludeContractForm__inputTitle inputTitle">Введите 6-значный номер из СМС</p>
+        <input id="OTPcode" class="input confirmConcludeContractForm__input" tabindex="1"
+          name="OTP-code" type="text" required autocomplete="off" maxlength="6" />
+      </div>
+
+      <div class="concludeContractForm__buttonBlock buttonBlock">
+        <button type="submit" nextPage="../registration/registration.html" id="concludeContractFormButton" class="button submitButton concludeContractForm__button_next"
+          tabindex="3">Продолжить</button> 
+        <a href="../concludeContract/concludeContract.html" class="button backButton concludeContractForm__button_back" tabindex="4" type="button">Назад</a> 
+      </div>
+
+  </div>
+  </form>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../../js/index.js"></script>
+</body>
+
+</html>

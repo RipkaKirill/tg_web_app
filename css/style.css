@@ -1,0 +1,226 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family:
+		"Montserrat",
+		-apple-system,
+		-system-ui,
+		sans-serif;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0px 15px;
+	font-size: 14px;
+}
+
+/* ------------------------------------------------------- */
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	padding-top: 20px;
+}
+
+.title {
+	font-weight: 700;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #58595b;
+}
+
+.inputBlock {
+	margin-bottom: 24px;
+}
+
+.inputTitle {
+	margin-bottom: 8px;
+	color: gray;
+}
+
+.input {
+	width: 100%;
+	padding: 0px 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	line-height: 32px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.input.toggleEye {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: red;
+}
+.input:focus {
+	box-shadow: 0 0 5px rgb(42, 126, 251);
+}
+.input.inputError {
+	box-shadow: 0 0 5px rgb(255, 64, 64);
+}
+
+.inputHint {
+	color: gray;
+}
+
+.buttonBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.button {
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.submitButton {
+	color: white;
+	border-radius: 25px;
+	background-color: #002882;
+	transition-duration: 0.15s;
+}
+
+.submitButton:hover {
+	background-color: #001d61;
+}
+
+.submitButton.button-inactive {
+	cursor: not-allowed;
+	background: rgb(185, 185, 185);
+}
+
+.simpleButton {
+	color: white;
+	border-radius: 25px;
+	background-color: #002882;
+	transition-duration: 0.15s;
+}
+.simpleButton:hover {
+	background-color: #001d61;
+}
+
+.backButton {
+	background: inherit;
+	color: #002882;
+}
+.forgotPassword {
+	display: inline-block;
+	margin-bottom: 24px;
+}
+.radioInput {
+	margin-bottom: 10px;
+}
+
+.checkboxInput {
+	margin-bottom: 10px;
+}
+.detailedAplicationLi {
+	margin-bottom: 10px;
+}
+
+.inputError {
+  color: rgb(214, 57, 57);
+}
+
+.noApplicationsText {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.detailedInformation {
+	line-height: 18px;
+}
+
+.detailedInformation:last-child {
+	margin-bottom: 20px;
+}
+
+.widget {
+	width: 100%;
+	height: 200px;
+	background: url('https://top-fon.com/uploads/posts/2023-01/1674745423_top-fon-com-p-vtb-fon-dlya-prezentatsii-3.jpg');
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}

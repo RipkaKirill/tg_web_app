@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">Авторизация</h1>
+
+    <form novalidate id="form" class="authorizationForm" action="#" method="post" enctype="multipart/form-data">
+
+      <div class="authorizationForm__inputBlock inputBlock">
+        <p class="authorizationForm__inputTitle inputTitle">Логин</p>
+        <input id="login" class="input authorizationForm__input" tabindex="1" name="login" type="text" required
+          autocomplete="off" minlength="8" maxlength="30" isvalid="false"/>
+        <p class="loginInputError inputError"></p>
+      </div>
+
+      <div class="authorizationForm__inputBlock inputBlock">
+        <p class="authorizationForm__inputTitle inputTitle">Пароль</p>
+        <input id="password" class="input authorizationForm__input" tabindex="2" name="password" type="password" required
+          autocomplete="off" minlength="8" maxlength="30" isvalid="false"/>
+        <p class="passwordInputError inputError"></p>
+      </div>
+
+      <div class="authorizationForm__buttonBlock buttonBlock">
+        <p class="formError"></p>
+        <button type="submit" nextPage="../applications/applications.html" id="authorizationFormFormButton"
+          class="button submitButton authorizationForm__button_next" tabindex="4">Продолжить</button>
+        <a href="../registration/registration.html" class="button backButton authorizationForm__button_back"
+          tabindex="4" type="button">Назад</a>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./authorization.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="./processСompleted.css">
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+    <div class="message">
+      <div class="message__icon">
+        <img src="../../img/icons/icons8-ок-48.png" alt="">
+      </div>
+      <div class="message__part-1 message__part">
+        <p class="message__text">Кредитный договор заключен. Денежные средства будут доступны после получения Вами
+          карточки. О готовности карточки проинформируем Вас посредством SMS/Viber-сообщения. Благодарим за
+          сотрудничество! </p>
+      </div>
+      <div class="message__part-2 message__part">
+        <p class="message__text"> Статус Вашей карточки отслеживайте в наших онлайн- сервисах в разделе "Карточки": в
+          Интернет-банке или в мобильной версии Интернет-банка <a
+            href="https://online.vtb.by/loginPage.xhtml">https://online.vtb.by/loginPage.xhtml</a>.</p>
+        <p>Для активации карты после ее получения нажмите кнопку "Подтвердить
+          получение»" и введите сеансовый пароль (ОТР- код) </p>
+      </div>
+    </div>
+
+    <div class="concludeContractForm__buttonBlock buttonBlock">
+      <button type="submit" nextPage="../authorization/authorization.html" id="concludeContractFormButton"
+        class="button simpleButton concludeContractForm__button_next" tabindex="3">Завершить</button>
+      <a href="../applications/applications.html" class="button backButton concludeContractForm__button_back"
+        tabindex="4" type="button">Назад к списку заявок</a>
+    </div>
+
+  </div>
+
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../../js/index.js"></script>
+</body>
+
+</html>

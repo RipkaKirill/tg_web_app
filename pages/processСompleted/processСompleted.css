@@ -1,0 +1,23 @@
+.message {
+  margin-bottom: 20px;
+  font-size: 16px;
+  background: rgb(230, 230, 230);
+}
+.message__icon {
+  margin-bottom: 5px;
+  text-align: center;
+  background: rgb(112, 112, 112);
+}
+.message__part {
+  border: 1px solid rgb(75, 75, 75);
+}
+.message__part-1 {
+  margin-bottom: 20px;
+}
+.message__text {
+}
+.message__part-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

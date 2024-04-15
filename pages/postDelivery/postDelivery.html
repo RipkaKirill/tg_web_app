@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/radioButton.css">
+  <title>ВТБ Банк бот</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p class="title">Почтовая доставка карточки</p>
+    <p class="adress"></p>
+
+    <form class="postDeliveryForm form"  method="post" enctype="multipart/form-data">
+
+      <div class="postDeliveryForm__inputBlock inputBlock">
+        <p class="postDeliveryForm__inputTitle inputTitle">Город/Область</p>
+        <input id="region" class="input postDeliveryForm__input" tabindex="1"
+          name="region" type="text" required autocomplete="off" />
+      </div>
+
+      <div class="postDeliveryForm__inputBlock inputBlock">
+        <p class="postDeliveryForm__inputTitle inputTitle">Улица</p>
+        <input id="street" class="input postDeliveryForm__input" tabindex="2"
+          name="street" type="text" required autocomplete="off" />
+      </div>
+
+      <div class="postDeliveryForm__inputBlock inputBlock">
+        <p class="postDeliveryForm__inputTitle inputTitle">Номер дома</p>
+        <input id="house" class="input postDeliveryForm__input" tabindex="3"
+          name="house" type="text" required autocomplete="off" />
+      </div>
+
+      <div class="postDeliveryForm__inputBlock inputBlock">
+        <p class="postDeliveryForm__inputTitle inputTitle">Номер квартиры</p>
+        <input id="flat" class="input postDeliveryForm__input" tabindex="4"
+          name="flat" type="text" required autocomplete="off" />
+      </div>
+
+      <div class="postDeliveryForm__inputBlock inputBlock">
+        <p class="postDeliveryForm__inputTitle inputTitle">Индекс</p>
+        <input id="index" class="input postDeliveryForm__input" tabindex="5"
+          name="index" type="text" required autocomplete="off" />
+      </div>
+
+      <div class="postDeliveryForm__buttonBlock buttonBlock">
+        <button type="submit" nextPage="../introduction/introduction.html"
+          id="postDeliveryFormButton"
+          class="button submitButton postDeliveryForm__button_next">Продолжить</button>
+        <a href="../agreeWithConditions/agreeWithConditions.html" class="button backButton">Назад</a>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script src="./postDelivery.js"></script>
+</body>
+
+</html>
