@@ -15,19 +15,21 @@
 
     <form class="concludeContractForm form" action="#" method="post" enctype="multipart/form-data">
 
+      <!-- <iframe src="https://ca-dealer.ru/assets/img/documents/credit_vtb.pdf" width="380" height="400"></iframe> -->
+      <object><embed src="https://ca-dealer.ru/assets/img/documents/credit_vtb.pdf" width="390" height="500" /></object>
       <div class="documentsList"></div>
 
       <div class="concludeContractForm__inputBlock inputBlock">
         <p class="concludeContractForm__inputTitle inputTitle">Кодовое слово</p>
-        <input id="codeWord" class="input concludeContractForm__input" tabindex="1"
-          name="codeWord" type="text" required autocomplete="off" maxlength="14" />
+        <input id="codeWord" class="input concludeContractForm__input" tabindex="1" name="codeWord" type="text" required
+          autocomplete="off" maxlength="14" />
         <p class="codeWordError inputError"></p>
       </div>
 
       <div class="concludeContractForm__buttonBlock buttonBlock">
         <button type="submit" nextPage="../confirm-concludeContract/confirm-concludeContract.html"
           id="concludeContractFormButton"
-          class="button submitButton concludeContractForm__button_next">Продолжить</button> 
+          class="button submitButton concludeContractForm__button_next">Продолжить</button>
         <a href="../detailedApplication/detailedApplication.html" class="button backButton">Назад</a>
       </div>
   </div>
