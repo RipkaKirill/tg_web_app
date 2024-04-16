@@ -4,16 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/checkboxButton.css">
   <link rel="stylesheet" href="./concludeContract.css">
+
   <title>ВТБ Банк бот</title>
 </head>
 
 <body>
   <div class="wrapper">
     <p class="title">Ознакомление и согласие с пакетом документов</p>
+    <div class="controls">
+      <button id="previous" class="previous">&laquo; Previous</button>
+      <p id="pageNumber">Page 1 of 1</p>
+      <button id="next" class="next">Next &raquo;</button>
+    </div>
 
+    <canvas id="canvas"></canvas>
     <form class="concludeContractForm form" action="#" method="post" enctype="multipart/form-data">
 
       <!-- <iframe src="https://ca-dealer.ru/assets/img/documents/credit_vtb.pdf" width="380" height="400"></iframe> -->
@@ -48,15 +56,38 @@
     <div class="modalActive">
 
       <div class="modalWindow">
-        <iframe src="https://rkkabel.by/sites/default/files/tipovaya_forma_dogovora.pdf" style="width:100%; height:500px;"
-          frameborder="0"></iframe>
+        <!-- <iframe src="https://rkkabel.by/sites/default/files/tipovaya_forma_dogovora.pdf"
+          style="width:100%; height:500px;" frameborder="0"></iframe> -->
+
       </div>
       <div class="modalClose button simpleButton">
         Закрыть
       </div>
     </div>
   </div>
-  <script src="./concludeContract.js"></script>
+  <!-- <script src="./concludeContract.js"></script> -->
+  <!-- <script src="./pdf-viewer.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.1.392/pdf.min.mjs"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+
+  <script type="module">
+    const canvas = document.getElementById('canvas')
+    const context = canvas.getContext('2d')
+    let loadingTask = pdfjsLib.getDocument('./tipovaya_forma_dogovora.pdf');
+    loadingTask.promise.then(function (pdf) {
+      let page = pdf._pdfInfo.numPages
+      pdf.getPage(1).then(page => {
+        let pageViewPort = page.getViewport({ scale: 1 })
+        canvas.width = pageViewPort.width
+        canvas.height = pageViewPort.height
+        page.render({
+          canvasContext: context,
+          viewport: pageViewPort
+        })
+      })
+    });
+  </script>
 </body>
 
 </html>

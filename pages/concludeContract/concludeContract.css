@@ -51,3 +51,27 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
+
+
+#canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#pageNumber {
+  display: inline;
+}
+
+.previous {
+  display: inline;
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 15%;
+}
+
+.next {
+  display: inline;
+  background-color: #42A047;
+  color: white;
+  border-radius: 15%;
+}
