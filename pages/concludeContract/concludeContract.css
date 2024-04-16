@@ -25,14 +25,14 @@ body {
   height: 495px; */
   /* top: calc(50% - 250px);
   left: calc(50% - 175px); */
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: rgb(255, 255, 255);
   cursor: default;
   padding-bottom: 10px;
 }
 
 .modalClose {
-  /* max-width: 300px; */
+  max-width: 300px; 
   margin: 0px auto;
   /* margin: 0px auto;
   text-align: center;
@@ -54,8 +54,10 @@ body {
 
 
 #canvas {
+  border-radius: 7px 7px 0px 0px;
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 #pageNumber {
