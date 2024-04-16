@@ -17,6 +17,10 @@ function startValidation() {
     e.stopPropagation()
     document.activeElement.blur();
   })
+  seriesNumberPassportInput.addEventListener('click', e => {
+    e.stopPropagation()
+  })
+
   form.addEventListener('submit', async event => {
     event.preventDefault()
     if (!hasInvalidInput()) {
