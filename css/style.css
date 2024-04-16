@@ -128,10 +128,10 @@ body {
 	background: red;
 }
 .input:focus {
-	box-shadow: 0 0 5px rgb(42, 126, 251);
+	box-shadow: 0 0 5px #2a7efb;
 }
 .input.inputError {
-	box-shadow: 0 0 5px rgb(255, 64, 64);
+	box-shadow: 0 0 5px #ff4040;
 }
 
 .inputHint {
