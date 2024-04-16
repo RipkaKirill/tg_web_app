@@ -14,6 +14,17 @@ startValidation()
 function startValidation() {
   toggleButton()
 
+  document.body.addEventListener('click', e => {
+    document.activeElement.blur();
+  })
+
+  inputList.forEach(inputElement => {
+    inputElement.addEventListener('click', e => {
+      e.stopPropagation()
+    }
+    )
+  })
+
   form.addEventListener('submit', async event => {
     event.preventDefault()
     if (!hasInvalidInput()) {
@@ -21,7 +32,6 @@ function startValidation() {
       inputList.forEach(inputElement => {
         data[inputElement.name] = inputElement.value
       })
-      console.log(data);
       await fetch('https://66178253ed6b8fa43482d205.mockapi.io/user', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },

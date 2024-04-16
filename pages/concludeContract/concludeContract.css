@@ -28,13 +28,13 @@ body {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   cursor: default;
-  /* padding: 40px 20px; */
+  padding-bottom: 10px;
 }
 
 .modalClose {
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: 0px auto;
- /* margin: 0px auto;
+  /* margin: 0px auto;
   text-align: center;
   padding: 10px 30px;
   background: rgb(28, 28, 109);

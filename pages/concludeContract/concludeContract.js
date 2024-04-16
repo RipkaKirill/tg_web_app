@@ -24,7 +24,7 @@ modalTrigger.addEventListener("click", function () {
 
   // если размер экрана больше 1366 пикселей (т.е. на мониторе может появиться ползунок)
   if (windowInnerWidth >= 1366) {
-      bodyMargin();
+    bodyMargin();
   }
 
   // позиционируем наше окно по середине, где 175 - половина ширины модального окна
@@ -34,17 +34,17 @@ modalTrigger.addEventListener("click", function () {
 modalClose.addEventListener("click", function () {
   modalBackground.style.display = "none";
   if (windowInnerWidth >= 1366) {
-      bodyMargin();
+    bodyMargin();
   }
 });
 
 // закрытие модального окна на зону вне окна, т.е. на фон
 modalBackground.addEventListener("click", function (event) {
   if (event.target === modalBackground) {
-      modalBackground.style.display = "none";
-      if (windowInnerWidth >= 1366) {
-          bodyMargin();
-      }
+    modalBackground.style.display = "none";
+    if (windowInnerWidth >= 1366) {
+      bodyMargin();
+    }
   }
 });
 
@@ -59,6 +59,15 @@ async function concludeContract() {
   toggleButton()
   let data = []
 
+  document.body.addEventListener('click', e => {
+    document.activeElement.blur();
+  })
+
+  inputList.forEach(inputElement => {
+    inputElement.addEventListener('click', e => {
+      e.stopPropagation()
+    })
+  })
 
   await fetch('https://66178253ed6b8fa43482d205.mockapi.io/user')
     .then(response => response.json())
