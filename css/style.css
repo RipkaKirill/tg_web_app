@@ -31,7 +31,7 @@ aside {
 }
 html,
 body {
-	height: 100%;
+	/* height: 100%; */
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
@@ -82,16 +82,15 @@ h6 {
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	padding: 0px 15px;
+
 	font-size: 14px;
 }
 
 /* ------------------------------------------------------- */
 
 .wrapper {
+	padding: 20px 15px 150px;
 	width: 100%;
-	height: 100vh;
-	padding-top: 20px;
 }
 
 .title {
@@ -130,7 +129,6 @@ body {
 }
 .input:focus {
 	-webkit-box-shadow: 0 0 5px #2a7efb;
-	border-color: #2a7efb;
 	box-shadow: 0 0 5px #2a7efb;
 }
 .input.inputError {
