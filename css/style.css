@@ -44,6 +44,7 @@ input,
 button,
 textarea {
 	font-family: inherit;
+	-webkit-appearance: none;
 }
 input::-ms-clear {
 	display: none;
@@ -128,11 +129,12 @@ body {
 	background: red;
 }
 .input:focus {
-	-webkit-appearance: none;
+	-webkit-box-shadow: 0 0 5px #2a7efb;
+	border-color: #2a7efb;
 	box-shadow: 0 0 5px #2a7efb;
 }
 .input.inputError {
-	-webkit-appearance: none;
+	-webkit-box-shadow: 0 0 5px #ff4040;
 	box-shadow: 0 0 5px #ff4040;
 }
 
