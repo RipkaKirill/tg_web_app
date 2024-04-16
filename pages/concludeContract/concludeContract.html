@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/checkboxButton.css">
+  <link rel="stylesheet" href="./concludeContract.css">
   <title>ВТБ Банк бот</title>
 </head>
 
@@ -23,8 +24,6 @@
 
 
       <!-- <iframe src="https://ca-dealer.ru/assets/img/documents/credit_vtb.pdf" width="100%" height="600px" loading="lazy" title="PDF-file"></iframe> -->
-      <iframe src="https://ca-dealer.ru/assets/img/documents/credit_vtb.pdf"
-        style="width:100%; height:500px;" frameborder="0"></iframe>
 
       <div class="documentsList"></div>
       <div class="concludeContractForm__inputBlock inputBlock">
@@ -39,11 +38,24 @@
           id="concludeContractFormButton"
           class="button submitButton concludeContractForm__button_next">Продолжить</button>
         <a href="../detailedApplication/detailedApplication.html" class="button backButton">Назад</a>
+        <button type="button" id="concludeContractFormButton" class="button simpleButton trigger">открыть PDF</button>
+
       </div>
   </div>
   </form>
   </div>
+  <div class="modalBackground">
+    <div class="modalActive">
 
+      <div class="modalWindow">
+        <iframe src="https://rkkabel.by/sites/default/files/tipovaya_forma_dogovora.pdf" style="width:100%; height:500px;"
+          frameborder="0"></iframe>
+      </div>
+      <div class="modalClose button simpleButton">
+        Закрыть
+      </div>
+    </div>
+  </div>
   <script src="./concludeContract.js"></script>
 </body>
 

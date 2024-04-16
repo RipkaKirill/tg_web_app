@@ -13,17 +13,6 @@ startValidation()
 
 function startValidation() {
   toggleButton()
-  document.body.addEventListener('click', e => {
-    e.stopPropagation()
-    document.activeElement.blur();
-  })
-
-  inputList.forEach(inputElement => {
-    inputElement.addEventListener('click', e => {
-      e.stopPropagation()
-    }
-    )
-  }) 
 
   form.addEventListener('submit', async event => {
     event.preventDefault()
