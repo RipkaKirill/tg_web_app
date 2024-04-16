@@ -10,7 +10,7 @@ const regExpIdentificationInput = [/\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /[A
 const regExpSeriesNumberPassportInput = [/[a-z]/i, /[a-z]/i, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/]
 
 startValidation()
-
+document.activeElement.blur();
 function startValidation() {
   toggleButton()
 
