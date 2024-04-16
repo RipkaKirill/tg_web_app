@@ -17,9 +17,13 @@ function startValidation() {
     e.stopPropagation()
     document.activeElement.blur();
   })
-  seriesNumberPassportInput.addEventListener('click', e => {
-    e.stopPropagation()
-  })
+
+  inputList.forEach(inputElement => {
+    inputElement.addEventListener('click', e => {
+      e.stopPropagation()
+    }
+    )
+  }) 
 
   form.addEventListener('submit', async event => {
     event.preventDefault()
