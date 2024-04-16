@@ -128,9 +128,11 @@ body {
 	background: red;
 }
 .input:focus {
+	-webkit-appearance: none;
 	box-shadow: 0 0 5px #2a7efb;
 }
 .input.inputError {
+	-webkit-appearance: none;
 	box-shadow: 0 0 5px #ff4040;
 }
 
