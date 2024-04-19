@@ -73,7 +73,7 @@
   <script>
     const canvas = document.getElementById('canvas')
     const context = canvas.getContext('2d')
-    let loadingTask = pdfjsLib.getDocument('./tipovaya_forma_dogovora.pdf');
+    let loadingTask = pdfjsLib.getDocument('https://acquiring.vtb.ru/upload/iblock/ccd/ccdcb28033f4f8ea9e25d3580e049220.pdf');
     loadingTask.promise.then(function (pdf) {
       let page = pdf._pdfInfo.numPages
       pdf.getPage(1).then(page => {
